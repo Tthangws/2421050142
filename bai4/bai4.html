@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>bai4</title>
+    </head>
+    <body>
+        <h1>form tạo thông tin</h1>
+        <form>
+            <div>
+                <!-- input nếu k truyền type thì type sẽ mặc định là text -->
+                <p><b>Họ Và Tên: </b></p>
+                <input type="text" name ="hoVaTen"></input>
+                <br>
+                <p><b>Giới thiệu </b></p>
+                <textarea name="gioiThieu"></textarea>
+            </div>
+
+            <div>
+                <p><b>email </b></p>
+                <input type="email" name ="email"></input>
+            </div>
+
+            <div>
+                <p><b>Số Điện Thoại </b></p>
+                <input name ="soDienThoai"
+                type ="tel" 
+                placeholder = "dạng số 123"
+                required
+                pattern="([0]{1})([9,3,6,8]{1})([0-9]{8})">
+                <br>
+            </div>
+        
+
+            <div>
+                <p><b>Giới tính </b></p>
+                <input type="radio" name ="gender" value="male">Nam
+                <input type="radio" name ="gender" value="female">Nữ
+                <input type="radio" name ="gender" value="hêhe">ko biết
+            </div>
+            
+            <div>
+                <p><b>Sở Thích </b></p>
+                <input type="checkbox" name ="hobby" value="game">game<br>
+                <input type="checkbox" name ="hobby" value="music">âm nhạc<br>
+                <input type="checkbox" name ="hobby" value="sport">thể thao<br>
+                <input type="checkbox" name ="hobby" value="chess">cờ vua<br>
+            </div>
+
+            <div>
+                <!-- list, datalist -->
+                 <p><b>Trình duyệt web hay sử dụng </b></p>
+                 <input list="browsers">
+                 <datalist id="browsers">
+                    <option value ="Internet Explorer">
+                    <option value ="Firefox">
+                    <option value ="Chrome">
+                    <option value ="Opera">
+                    <option value ="Opera">
+                    <option value ="Opera">
+                 </datalist>
+
+                 <!-- selection list - chọn 1, chọn nhiều tự tìm hiểu-->
+                 <select name ="browsers">
+                    <option value ="Internet Explorer">Internet Explorer</option>
+                    <option value ="Firefox">Firefox</option>
+                    <option value ="Chrome">Chrome</option>
+                    <option value ="Opera">Opera</option>
+                    <option value ="Opera">Safari</option>
+                    <option value ="Opera">Cốc cốc</option>
+            </div>
+
+            <div>
+                <!-- range -->
+                 0<input type="range" id="a" value ="50">100
+            </div>
+
+            <div>
+                <!-- nhúng video -->
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/0OWK5yy-7lM?si=y7S3iLlSwGd98Zhu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div>
+                <MARQUEE>
+                    <img src="../anh/pug.jpg">
+                </MARQUEE>
+            </div>
+
+            <div>
+                <!-- chèn audio -->
+                 <audio controls>
+                    <source src="" type="audio/mp3">
+                 </audio>
+
+                 <!-- chèn video clip trên máy vào-->
+                  <video controls>
+                    <source src="" type="video/mp4">
+                  </video>
+            </div>
+
+            <div>
+                <!-- 1 số ký tự đặc biệt tự tham khảo-->
+                <!-- vd -->
+            </div>
+
+            <div>
+                <!-- buttons -->
+                 <input type="submit">
+                 <button>click</button>
+                 <input type="reset">
+            </div>
+            
+
+        </form>
+    </body>
+</html>
