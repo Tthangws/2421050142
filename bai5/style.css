@@ -1,0 +1,33 @@
+/* css=cascading stylr sheets: mẫu quy định cách thức thể hiện các thẻ HTML
+có thể định nghĩa nhiều style vào trong 1 thẻ html
+-> Mục đích sd: 
+- tách biệt trình bày khỏi nội dung 
+- thiết kế linh hoạt
+- dễ thay đổi và bảo trì
+
+-> cú pháp cơ bản
+- selectors: bộ chọn
+- declaration block: khối khai báo
+- properties và value
+
+- có 3 loại css
++ inline style sheet
++ internal style sheet
++ external style sheet
+*/
+h3{
+    color: pink;
+}
+
+#humg {
+    color:aqua;
+}
+
+.tieude{
+    /* quy định màu nền */
+    background-color:black;
+}
+
+h3.tieude2{
+    background-color:brown
+}
