@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p.nhom{
+            color:red
+        }
+        em{
+            color:blue
+        }
+
+        .khoi1{
+            background-color:green;
+        }
+        .khoi2{
+            background-color:yellow;
+            /* 1 giá trị: cách đều xung quanh = giá trị đó */
+            /* 2 giá trị: giá trị đầu ( trên dưới), giá trị 2 (trái, phải) */
+            /* 4 giá trị: theo thứ tự trên phải dưới trái */
+            margin: 50px 200px 10px 100px;
+
+            /* dùng để vd làm cho béo lên */
+            padding:50px;
+        }
+        .khoi3{
+            background-color:red;
+        }
+
+
+        .khoi4{
+            background-color:rgb(84, 88, 91);
+            display: flex; /*bỏ thằng block đi để linh hoạt hơn*/
+        }
+        .khoi5{
+            background-color:blueviolet;
+            width:50%
+        }
+        .khoi6{
+            background-color:blue;
+            width:50%
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="color: red">Truong dai hoc mo dia chat</h1>
+
+    <p class="nhom">Nhóm 03</p>
+    <p>Truong dai hoc mo dia chat<em> cong nghe phần mềm</em></p>
+
+    <div class="khoi1">khối 1</div>
+    <div class="khoi2">khối 2</div>
+    <div class="khoi3">khối 3</div>
+
+    <div class="khoi4">
+        <div class="khoi5">khối 5</div>
+        <div class="khoi6">khối 6</div>
+    </div>
+
+</body>
+</html>
