@@ -1,0 +1,94 @@
+body{
+            margin:0;
+        }
+        .danh-muc{
+            background-color:#198cf0;
+        }
+        .danh-sach-muc{
+            padding:0;
+            margin:0;
+            /* bỏ dấu chấm ở danh sách khi dùng ul,li */
+            list-style:none;
+            display:flex;
+            /* khoảng cách giữa các mục */
+            gap: 20px;
+        }
+        .lien-ket{
+            color:white;
+            /* bỏ gạch chân */
+            text-decoration:none;
+        }
+        .muc{
+            gap: 10px;
+        }
+
+        main{
+            display:flex;
+        }
+        .trai{
+            width:20%;
+            height:100vh;
+            /* 3 tham số: độ dày, loại đường viền, màu sắc */
+            border-right: 1px solid blue;
+        }
+        .phai{
+            width:80%;
+            height:100vh;
+        }
+        .khoi-dang-nhap{
+            width:100%;
+            height:100px;
+        }
+
+        form{
+            width:80%;
+            margin:10px auto;
+        }
+
+        .khoi-thong-tin{
+            width:100%;
+            margin-bottom: 10px;
+        }
+        p{
+            margin:0;
+        }
+
+        input{
+            width:100%;
+            padding: 5px 0;
+        }
+
+        .quen-mat-khau-lien-ket{
+            color:#198cf0;
+            display: flex;
+            justify-content:flex-end;
+        }
+
+        button{
+            width:100%;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .login{
+            margin-bottom:10px;
+        }
+
+        .tin{
+            width: 95%;
+            height:100px;
+            margin:20px auto;
+            border: 1px solid #198cf0;
+            border-radius: 10px;
+        }
+
+        .chuc-nang{
+            width: 95%;
+            margin:10px auto;
+            display: flex;
+            justify-content:space-between;
+            border-bottom: 1px solid #198cf0;
+        }
+
+        .lien-ket-xem-tiep{
+            
+        }
