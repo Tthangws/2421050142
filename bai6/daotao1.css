@@ -1,4 +1,4 @@
-body{
+        body{
             margin:0;
         }
         .danh-muc{
@@ -33,7 +33,7 @@ body{
         }
         .phai{
             width:80%;
-            height:100vh;
+            height:auto;
         }
         .khoi-dang-nhap{
             width:100%;
@@ -56,6 +56,7 @@ body{
         input{
             width:100%;
             padding: 5px 0;
+            border-radius:5px;
         }
 
         .quen-mat-khau-lien-ket{
@@ -71,11 +72,15 @@ body{
         }
         .login{
             margin-bottom:10px;
+            background-color:#83c5ff;
+        }
+        .login-with-mco{
+            background-color:#198cf0;
         }
 
         .tin{
             width: 95%;
-            height:100px;
+            height:auto;
             margin:20px auto;
             border: 1px solid #198cf0;
             border-radius: 10px;
@@ -90,5 +95,49 @@ body{
         }
 
         .lien-ket-xem-tiep{
+            display: flex;
+            text-decoration:none;
+            justify-content:flex-end;
+            color:#198cf0;
+            font-size:13px;
             
         }
+        .danh-sach-bai{
+            display:flex;
+            justify-content:left;
+            padding-left:20px;
+        }
+
+        .chi-tiet-bai{
+            width:23%;
+        }
+
+        .img{
+            width:100%;
+            border-radius:20px;
+        }
+
+        .ngay-dang{
+            display:flex;
+            justify-content:end;
+            margin-right:55px;
+        }
+
+        .tieu-de{
+            margin:3px;
+        }
+
+        .line{
+            display:flex;
+            margin: 0px 0px 10px 10px;
+        }
+
+        .noi-dung-thong-bao{
+            display:block;
+            margin:5px;
+        }
+
+        .thong-bao{
+            margin:5px;
+        }
+
