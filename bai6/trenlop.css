@@ -129,7 +129,13 @@
 
         .line{
             display:flex;
-            margin: 0px 0px 10px 10px;
+            margin: 10px 10px;
+        }
+
+        .ngay-dang-tbao{
+           display:flex;
+           justify-content:flex-end;
+           margin: -5px 5px 0px 10px;
         }
 
         .noi-dung-thong-bao{
@@ -139,5 +145,17 @@
 
         .thong-bao{
             margin:5px;
+        }
+
+        .khoi-noi-dung-khac{
+            margin: 10px 30px;
+        }
+        .lien-ket-trang-chu{
+            text-decoration:none;
+            color:#198cf0;
+        }
+        .lien-ket-khao-sat-danh-gia{
+            text-decoration:none;
+            color:#198cf0;
         }
 
