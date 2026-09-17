@@ -92,11 +92,11 @@
 
         .noi-dung{
             width: 95%;
-            min-height: 100px;  /* Chiều cao tối thiểu, có ảnh thì tự giãn to ra */
+            min-height: 100px; 
             margin:20px auto;
             border: 1px solid #198cf0;
             border-radius: 10px;
-            padding:15px; /* Thêm khoảng đệm bên trong để ảnh không dính sát mép viền */
+            padding:15px; 
         }
 
         .chuc-nang{
@@ -110,7 +110,6 @@
         }
       
         .line{
-            /* thẻ border none dùng để xóa viền mặc định */
             border: none; 
             border-top: 1px solid #198cf0;
             margin:-10px 10px; 
@@ -135,7 +134,7 @@
 
         .hang-anh{
             display:flex;
-            gap:15px; /*khoảng cách giữa 2 ảnh*/
+            gap:15px; 
         }
 
         a {
@@ -161,10 +160,10 @@
 
         .cai-dat-app{
             display: flex;
-            width: 100%;                /* Bung hết chiều ngang khung */
-            justify-content: center;    /* Căn toàn bộ nội dung ra chính giữa */
-            align-items: center;        /* Căn đều theo chiều dọc */
-            gap: 700px;                  /* Khoảng cách thoáng giữa 2 cột tải app */
+            width: 100%;               
+            justify-content: center;   
+            align-items: center;       
+            gap: 700px;                  
             margin: 20px 0;
         }
 
