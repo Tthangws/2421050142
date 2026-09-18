@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+        <style>
+        body {
+            background-color: #2F2C38;
+            color: white;
+        }
+
+        .danh-sach-muc{
+            list-style:none;
+            display:flex;
+            gap:10px;
+            align-items:center;
+        }
+
+        .lien-ket-muc{
+            text-decoration:none;
+            color:#DBDBDD;
+            font-weight:bold;
+        }
+
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .muc{
+            padding:15px;
+            border-radius:25px;
+        }
+        .muc:hover{
+            background-color:aqua;
+        }
+
+        .logoN{
+            width:10%;
+        }
+
+        .avata{
+            width:80%;
+            border-radius:10px;
+        }
+
+        .dang-chon{
+            background-color:#9d98a3;
+        }
+
+        .banner{
+           background-color:#e3dfe8; 
+           width:90%;
+           /* height:50vh; */
+           margin:20px auto;
+           border-radius:10px;
+        }
+
+        .banner-anh{
+            width:100%;
+            border-radius:10px;
+        }
+
+        .danh-sach-the-loai{
+            width:95%;
+            background-color:#a57ed3;
+            height:20vh;
+            margin:20px auto;
+        }
+
+        .phim{
+            display:flex;
+            justify-content:space-between;
+        }
+
+        .phim-poster{
+            width:24%;
+            height:15vh;
+            border-radius:15px;
+            background-color:azure;
+        }
+
+        .danh-sach-nhan-vat{
+            display:flex;
+            justify-content:space-between;
+        }
+
+        .nhan-vat{
+            width:300px;
+            height:300px;
+            border-radius:50%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+    <nav class="danh-muc">
+        <ul class="danh-sach-muc">
+            <li class="muc"><a href="#" class="lien-ket"><img class="logo" src="../anh/logoN.png"></a></li>
+            <li class="muc dang-chon"><a href="#" class="lien-ket-muc">Trang chủ</a></li>
+            <li class="muc"><a href="#" class="lien-ket-muc">Nhân vật</a></li>
+            <li class="muc"><a href="#" class="lien-ket-muc">Series</a></li>
+            <li class="muc"><a href="#" class="lien-ket-muc">Phim</a></li>
+            <li class="muc"><a href="#" class="lien-ket-muc">Mới & Phổ biến</a></li>
+            <li class="muc"><a href="#" class="lien-ket-muc">Netflix của tôi</a></li>
+            <li class="muc"><a href="#" class="lien-ket-muc">Duyệt tìm theo ngôn ngữ</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="chuc-nang">
+        <div class="tim-kiem"></div>
+        <div class="thong-tin">
+            <img class="avata" src="" alt="">
+        </div>
+    </div>
+
+<main>
+    <div class="banner">
+        <img class="banner-anh" src="../anh/banner.png" alt=""></div>
+    </div>
+    <div class="danh-sach-the-loai">
+        <div class="the-loai">
+            <div calss="ten-the-loai">
+                <h2>Có thể bạn chưa xem</h2>
+            </div>
+            <div class+danh-sach-phim>
+                <img src="../anh/banner.png" class="phim-poster">
+                <img src="../anh/banner.png" class="phim-poster">
+                <img src="../anh/banner.png" class="phim-poster">
+                <img src="../anh/banner.png" class="phim-poster">
+            </div>
+        </div>
+
+        <div class="the-loai">
+            <div calss="ten-the-loai">
+                <h2>Có thể bạn chưa xem</h2>
+            </div>
+            <div class+danh-sach-phim>
+                <img src="../anh/banner.png" class="phim-poster">
+                <img src="../anh/banner.png" class="phim-poster">
+                <img src="../anh/banner.png" class="phim-poster">
+                <img src="../anh/banner.png" class="phim-poster">
+            </div>
+        </div>
+
+        <div class="the-loai">
+            <div calss="ten-the-loai">
+                <h2>Nhân vật</h2>
+            </div>
+            <div class+danh-sach-phim>
+                <img src="../anh/banner.png" class="phim-poster">
+                <img src="../anh/banner.png" class="phim-poster">
+                <img src="../anh/banner.png" class="phim-poster">
+                <img src="../anh/banner.png" class="phim-poster">
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>
