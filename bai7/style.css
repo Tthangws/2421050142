@@ -29,11 +29,11 @@
         }
 
         .muc:hover {
-            background-color: aqua;
+            background-color: #9d98a3;
         }
 
         .logoN {
-            width: 10%;
+            width: 100px;
         }
 
         .avata {
@@ -47,7 +47,7 @@
 
         .banner {
             background-color: #e3dfe8;
-            width: 90%;
+            width: 95%;
             /* height:50vh; */
             margin: 20px auto;
             border-radius: 10px;
@@ -88,4 +88,25 @@
             height: 150px;
             border-radius: 50%;
             margin:7px;
+        }
+
+        .phu-de{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            color:#e3dfe8;
+            font-size:13px;
+        }
+        h2{
+            font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size:20px;
+        }
+
+       .tim-kiem{
+        width:30px;
+        margin: 10px 15px;
+       }
+        .chuc-nang{
+            display:flex;
+            margin:0px 30px;
         }

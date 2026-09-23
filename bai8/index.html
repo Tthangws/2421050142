@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+
+
+</head>
+<body>
+    <!-- external javascript -->
+<script src="script.js"></script>
+<!-- internal javascript -->
+
+<script>
+document.writeln("hello word ");
+    //in ra màn hình
+//     document.writeln("hello world ");
+//     <!-- biến
+//  - cú pháp:
+//  + var name = value; -->
+//khai báo biến
+var name = "<br>Quang Anh ";
+document.writeln(name);
+
+name = "<br>ly";
+document.writeln(name);
+
+//phạm vi cuẩ biến
+//biến toàn cục
+//biến cục bộ
+
+//kiểu dl
+var year = 2026;
+document.writeln(year);
+
+//phep toan
+//cộng +
+var soThuNhat = 10;
+var soThuHai = 5;
+var ketQua = soThuNhat+soThuHai;
+document.writeln("<br>ket qua cua phep tinh la:",ketQua);
+
+//tru -
+var soThuNhat = 10;
+var soThuHai = 5;
+var ketQua = soThuNhat-soThuHai;
+document.writeln("<br>ket qua cua phep tinh la:",ketQua);
+
+//nhan *
+var soThuNhat = 10;
+var soThuHai = 5;
+var ketQua = soThuNhat*soThuHai;
+document.writeln("<br>ket qua cua phep tinh la:",ketQua);
+
+//chia /
+var soThuNhat = 10;
+var soThuHai = 5;
+var ketQua = soThuNhat/soThuHai;
+document.writeln("<br>ket qua cua phep tinh la:",ketQua);
+
+//chia lay du %
+var soThuNhat = 10;
+var soThuHai = 5;
+var ketQua = soThuNhat%soThuHai;
+document.writeln("<br>ket qua cua phep tinh la:",ketQua);
+
+
+
+//++
+document.writeln("<br>");
+document.writeln(++soThuNhat);
+//tương tư với --
+
+//+=
+var soThuNhat = 10;
+var soThuHai = 5;
+var ketQua = soThuNhat+=soThuHai;
+document.writeln("<br>ket qua cua phep tinh la:",ketQua);
+//tương tự với -=
+
+
+
+//------------------------------------------------------------------------------
+//string - chuỗi
+var ho = "Do";
+var ten = "Huong Ly";
+document.writeln("<br>"+ho+" "+ten)
+
+//do dai
+document.writeln("<br> độ dài chuỗi là: "+ho.length);
+
+//ktra kiểu biến
+document.writeln("<br> kiểu dữ liệu: "+typeof(ten));
+
+//các phương thức của string
+var hoVaTen = "Lương Quang Anh";
+document.writeln("<br>"+hoVaTen.indexOf("Quang"));// trả về vị trí xuất hiện của ký tự này trong chuỗi.
+//c2
+document.writeln("<br>"+hoVaTen.includes("Q"));// trả về true or false
+//c3
+document.writeln("<br>"+hoVaTen.startsWith("Luong"));
+
+//thay thế
+document.writeln("<br>"+hoVaTen.replace("Lương","Văn"));
+
+//viết hoa hết or thường hết
+document.writeln("<br>"+hoVaTen.toUpperCase("hoVaTen"));
+document.writeln("<br>"+hoVaTen.toLocaleLowerCase("hoVaTen"));
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
