@@ -108,6 +108,114 @@ document.writeln("<br>"+hoVaTen.replace("Lương","Văn"));
 document.writeln("<br>"+hoVaTen.toUpperCase("hoVaTen"));
 document.writeln("<br>"+hoVaTen.toLocaleLowerCase("hoVaTen"));
 
+document.writeln("<br>-----------------------------------------------------buổi tiếp theo-------------------------------------------");
+// kiểu number
+// thuộc tính cuẩ number
+// constructer, prototype, =...
+// hàm date:
+var toDay = new Date();
+document.writeln("<br>"+toDay);
+var ngay = new Date("8/6/2025");
+document.writeln("<br>"+ngay);
+
+var namnay = toDay.getFullYear();
+document.write("<br>"+namnay);
+
+var thangnay = toDay.getMonth();
+document.write("<br>"+thangnay);
+
+var homnay = toDay.getDate();
+document.write("<br>"+thangnay);
+var thu = toDay.getDay()+1;
+
+document.write("<br>Hôm nay là thứ "+thu+" ngày "+homnay+" tháng "+thangnay+" năm "+namnay);
+
+
+// mảng
+// khai báo
+var mangso = [1,2,3,4,5];
+document.writeln("<br>"+mangso[2]);
+document.writeln("<br>"+mangso.length);
+
+var mangten = ["Quang Anh", "Ly", "Thang"]
+document.writeln("<br>"+mangten[2]);
+
+var mang = [1,2,3,4,5,"Quang Anh", "Ly", "Thang"]
+document.writeln("<br>"+mang[5]);
+
+// phương thức của array
+var d = mang.concat(mangso, mangten);
+document.writeln("<br>"+d);
+
+// lấy ra phần tử cuối cùng trong mảng
+document.write("<br>"+d.pop());
+// đẩy thêm phần tử vào
+d.push("Duy");
+document.write("<br>"+d);
+// đảo ngược lại
+document.write("<br>"+d.reverse());
+
+// object
+var thongTinSinhVien = {
+    ten:"Nguyễn Trọng Thắng",
+    namSinh:2006,
+    queQuan: {
+        thanhPho:"Thanh Hóa",
+        xa:"Quý Lộc"
+    }
+};
+
+document.write("<br>" + thongTinSinhVien.ten + " - " + thongTinSinhVien.namSinh + " - " + thongTinSinhVien.queQuan.thanhPho);
+thongTinSinhVien.tuoi = namnay-thongTinSinhVien.namSinh;
+document.write("<br>"+thongTinSinhVien.tuoi);
+
+// boolean true-nam/false-nữ
+thongTinSinhVien.gioiTinh = true;
+document.write("<br>"+thongTinSinhVien.gioiTinh);
+// 
+var mangObject = [{
+        ten: "Nguyễn Trọng Thắng",
+        namSinh: 2006,
+        queQuan: "Thanh Hóa"
+    },
+    {
+        ten: "Lương Quang Anh",
+        namSinh: 2006,
+        queQuan: "Hà Nội"
+    },
+    {
+        ten: "Đỗ Hương Ly",
+        namSinh: 2006,
+        queQuan: "Hải Phòng"
+    }];
+    console.log(mangObject);
+
+// so sánh
+// ==
+var so1 = 10; 
+var so2 = "10";
+// === so sánh cả giá trị và kiểu dữ liệu
+document.write("<br>"+(so1!==so2));
+
+// câu điều kiện
+if(thu >= 7){
+    document.write("<br> cuối tuần đc nghỉ học");
+}
+else if(thu==4){
+    document.write("<br> Sắp đc nghỉ học")
+}
+else{
+    document.write("<br> đi học");
+}
+
+// bt: tìm số chẵn số lẻ
+var so = 20000000000000000000000000000000001;  // về suy nghĩ tại sao đuôi lẻ nhưng in ra chẵn
+if(so%2==0){
+    document.write("<br> là số chẵn");
+}else{
+    document.write("<br> là số lẻ");
+}
+
 
 
 </script>
