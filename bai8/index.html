@@ -209,12 +209,111 @@ else{
 }
 
 // bt: tìm số chẵn số lẻ
-var so = 20000000000000000000000000000000001;  // về suy nghĩ tại sao đuôi lẻ nhưng in ra chẵn
-if(so%2==0){
+var so = 20000000000000000000000000000000001n;  // về suy nghĩ tại sao đuôi lẻ nhưng in ra chẵn
+if(so%2n==0){
     document.write("<br> là số chẵn");
 }else{
     document.write("<br> là số lẻ");
 }
+
+
+document.writeln("<br>-----------------------------------------------------buổi tiếp theo-------------------------------------------");
+// switch()-case
+var d = new Date();
+var theDay = d.getDay();
+switch(theDay){
+    case 5:
+        document.write("<br>finally friday");
+        break;
+    case 6:
+        document.write("<br>super saturday");
+        break;
+    case 0:
+        document.write("<br>sleepy sunday");
+        break;
+    default:
+        document.write("<br>I'm looking forwaard to this weekend");
+}
+
+// for
+for(var index = 1; index <= 10; index++){
+    document.write("<br>");
+    document.write("Quang anh xin lỗi lần thứ "+index);
+
+}
+
+
+for(var i = 0 ; i < mang.length ; i++){
+    document.write("<br>");
+    document.write(mang[i]);
+}
+
+for(var i = 0 ; i < mang.length ; i++){
+    document.write("<br>");
+    if(mang[i]>='a'&&mang[i]<='z' || mang[i]>='A'&&mang[i]<='Z'){
+        document.write("hello "+ mang[i]);
+    }
+}
+
+// c2
+for(var i = 0 ; i < mang.length ; i++){
+    document.write("<br>");
+    if(isNaN(i)){
+        document.write("hello "+ mang[i]);
+    }
+}
+
+// while
+i = 0;
+while(i<=10){
+    document.write("the number is "+i);
+    document.write("<br />");
+    i = i+1;
+}
+
+// do while
+var j = 0;
+do{
+    document.write("<br>the number is "+j);
+    document.write("<br />");
+    j = j+1;
+}while(j <= 10)
+
+
+
+// kt mới - popup boxes
+// --------------------------------------
+// alert("hello");
+// --------------------------------------
+// var r = confirm("press a buton");
+// if(r == true){
+//     document.write("you pressed ok");
+// }
+// else{
+//     document.write("you pressed cancel");
+// }
+
+// ----------------------------------------
+// promt box
+// var r = prompt("Nhập họ tên", "Nhập tên ở đây")
+// document.write(r);
+// ----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

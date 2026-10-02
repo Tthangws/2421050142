@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function
+        function sayHello(){
+            document.write("hello");
+        }
+
+        sayHello();
+
+
+        // có tham số
+        function sayHello2(ten){
+            document.write("<br>xin chào bạn "+ten);
+        }
+
+        sayHello2("quang-anh");
+
+        // nhập 2 số bất kỳ và tính tổng số đấy
+
+        function tong(n,r){
+            if(isNaN(n)==false && isNaN(r)==false){
+            var tong = n+r;
+            document.write("<br> tổng 2 số la "+tong);
+            }
+        }
+
+        var n = Number(prompt("Nhập số thứ nhất", "Nhập số ở đây"));
+        var r = Number(prompt("Nhập số thứ hai", "Nhập số ở đây"));
+        tong(n,r);
+
+
+        <!-- btvn -->
+
+        // vieets ham tinh diem chu dua tren 3 dau diem (A,B,C)
+        // tong = A*0.6 +B*0.5+c*0/1  => diem chu tuong ung
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
