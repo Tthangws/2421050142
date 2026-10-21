@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input{
+            width:25%;
+        }
+    </style>
 </head>
 <body>
+    
+    <div>Nhập điểm A: <input id ="diemA" type="number"></div>
+    <div>Nhập điểm B: <input id ="diemB" type="number"></div>
+    <div>Nhập điểm C: <input id ="diemC" type="number"></div>
+    <div>
+        <button onclick="tinhDiem()">tính điểm</button>
+    </div>
+    <div>
+        Kết quả: <input id="ketqua" type="text">
+    </div>
     <script>
         //function
         function sayHello(){
@@ -41,7 +56,30 @@
         // tong = A*0.6 +B*0.5+c*0/1  => diem chu tuong ung
 
         // bai lam
+        // trỏ tới id = điểm A để lấy giá trị của nó
+        
+       function tinhDiem(){
+            var A = parseFloat(document.getElementById("diemA").value);
+            var B = parseFloat(document.getElementById("diemB").value);
+            var C = parseFloat(document.getElementById("diemC").value);
+
+            // document.write("<br>điểm A: "+A);
+            // document.write("<br>điểm B: "+B);
+            // document.write("<br>điểm C: "+C);
+
+            document.getElementById("ketqua").value = diem(A,B,C);
+        }
+        tinhDiem();
+
         function diem(A,B,C){
+            // var A = document.getElementById("diemA").value;
+            // var B = document.getElementById("diemB").value;
+            // var C = document.getElementById("diemC").value;
+
+            
+
+
+
             var cal = A*0.6+B*0.3+C*0.1;
             var diemChu = "";
             var xepLoai = "";
@@ -50,7 +88,7 @@
                 document.write("Điểm không hợp lệ!");
             } else if (cal >= 9.0) {
                 diemChu = "A+"; diemHe4 = 4.0; xepLoai = "Đạt";
-            } else if (cal >= 8.5) { // Tự động hiểu là < 9.0
+            } else if (cal >= 8.5) {
                 diemChu = "A";  diemHe4 = 3.7; xepLoai = "Đạt";
             } else if (cal >= 8.0) {
                 diemChu = "B+"; diemHe4 = 3.5; xepLoai = "Đạt";
@@ -69,10 +107,37 @@
             }
             return "Điểm hệ 10: "+cal+" || Điểm hệ 4: "+diemHe4+" || Điểm chữ: "+diemChu+" || Xếp loại: "+xepLoai;
         }
-        var A = Number(prompt("Nhập điểm A: ","Nhập ở đây!"));
-        var B = Number(prompt("Nhập điểm B: ","Nhập ở đây!"));
-        var C = Number(prompt("Nhập điểm C: ","Nhập ở đây!"));
-        document.write("<br>"+diem(A,B,C));
+        // var A = Number(prompt("Nhập điểm A: ","Nhập ở đây!"));
+        // var B = Number(prompt("Nhập điểm B: ","Nhập ở đây!"));
+        // var C = Number(prompt("Nhập điểm C: ","Nhập ở đây!"));
+        // alert(diem(A,B,C));
+
+        document.write("<br>------------------------------------------- Buổi tiếp theo---------------------------------------------");
+        // chuyển chuỗi thành số
+        // dùng parseInt(); và parseFloat();
+        // vd: parseInt("42")                result=42
+        //     parseInt("42.33")             result=42
+        //     parseFloat("42.33")           result=42.33
+        //     3+3+parseInt("3")             result=9
+
+        // EVENTS: những cách để tương tác với html
+
+        // function tinhDienChu(a,b,c){
+        //     var tong = a*0.6 + b*0.3 + c*0.1;
+        //     ....//chữa bt
+        // }
+
+        function tuoi(namsinh){
+            var namnay = new Date().getFullYear();
+            return namnay-namsinh;
+        }
+        
+        function tinhtuoi(){
+            var namsinh = parseInt(document.getElementById("namsinh").value);
+            
+            document.getElementById("ketQua").value = tuoi(namsinh);
+        }
+        
 
 
 
@@ -100,5 +165,12 @@
 
 
     </script>
+    Nhập năm sinh: <input id="namsinh" type="number">
+    <div>
+        <button onclick = "tinhtuoi()">ok</button>
+    </div>
+    <div>
+        Kết quả: <input id="ketQua" type="text">
+    </div>
 </body>
 </html>
