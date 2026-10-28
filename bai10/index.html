@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ví dụ đổi video</title>
+    <style>
+        .video{
+            width:50%;
+            height:500px;
+            margin:auto;
+            background-color:antiquewhite;
+            display:flex;
+            justify-content:center;
+        }
+
+        .danh-sach{
+            width:80%;
+            display:flex;
+            margin:50px auto;
+            justify-content:space-between;
+        }
+
+        .anh{
+            width:24%;
+            height:100px;
+        }
+
+        img{
+            width:100%;
+        }
+        .ten{
+            display:flex;
+            justify-content:center;
+        }
+    </style>
+</head>
+<body>
+    <!-- màn xem -->
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/cKBRHaPdjbc?si=FBhTtZV1MK81Udj3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3 class="ten">tên</h3>
+
+     <div class="danh-sach">
+        <div class="anh" onclick="chonVid(1)">
+            <img src="../anh/h11.png" alt="">
+            <p>bài 1</p>
+        </div>
+
+        <div class="anh" onclick="chonVid(2)">
+            <img src="../anh/h12.png" alt="">
+            <p>bài 2</p>
+        </div>
+
+        <div class="anh" onclick="chonVid(3)">
+            <img src="../anh/h13.png" alt="">
+            <p>bài 3</p>
+        </div>
+
+        <div class="anh" onclick="chonVid(4)">
+            <img src="../anh/h14.png" alt="">
+            <p>bài 4</p>
+        </div>
+     </div>
+
+     <script>
+        var danhSachVid = [
+            {
+                id:1,
+                ten:"bai1",
+                duongDanAnh:"h11.png",
+                duongDanYoutube:"https://www.youtube.com/embed/zepHPnUDROE?si=qqvnPIBk4Ctvfr5J" 
+            },
+            {
+                id:2,
+                ten:"bai2",
+                duongDanAnh:"h12.png",
+                duongDanYoutube:"https://www.youtube.com/embed/NbKCJtFkQ4s?si=2BtvX90N1Nk52IkE"
+            },
+            {
+                id:3,
+                ten:"bai3",
+                duongDanAnh:"h13.png",
+                duongDanYoutube:"https://www.youtube.com/embed/_XX248bq6Pw?si=nV8G9TBeemYobIb-" 
+            },
+            {
+                id:4,
+                ten:"bai4",
+                duongDanAnh:"h14.png",
+                duongDanYoutube:"https://www.youtube.com/embed/9WLb1qf2kK4?si=1Ovhw7SM3pMOS_oM"
+            },
+        ]
+
+        function chonVid(id){
+            for(let i = 0 ; i < danhSachVid.length; i++){
+                if(danhSachVid[i].id == id){
+                    document.getElementsByClassName("ten")[0].innerHTML = danhSachVid[i].ten;
+                    document.getElementsByTagName("iframe")[0].src=danhSachVid[i].duongDanYoutube;
+                }
+            }
+        }
+     </script>
+</body>
+</html>
