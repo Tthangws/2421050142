@@ -56,6 +56,7 @@
         .banner-anh {
             width: 100%;
             border-radius: 10px;
+            display: block;
         }
 
         .danh-sach-the-loai {
@@ -111,9 +112,10 @@
             margin:0px 30px;
         }
 
-        /* Ép khung chứa video banner và chính thẻ video rộng 100%, cao khớp với banner ảnh */
-    .banner video.video-banner {
-    width: 100%;
-    height: 750px; /* Hoặc chỉnh chiều cao tuỳ ý cho cân đối với banner của bạn */
-    object-fit: cover; /* Giúp video không bị méo hình */
-}
+        .banner video.video-banner {
+        width: 100%;
+        height: 750px; 
+        object-fit: cover;
+        display: block;
+        border-radius:10px;
+        }

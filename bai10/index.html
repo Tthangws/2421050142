@@ -94,7 +94,7 @@
             for(let i = 0 ; i < danhSachVid.length; i++){
                 if(danhSachVid[i].id == id){
                     document.getElementsByClassName("ten")[0].innerHTML = danhSachVid[i].ten;
-                    document.getElementsByTagName("iframe")[0].src=danhSachVid[i].duongDanYoutube;
+                    document.getElementsByClassName("video")[0].src=danhSachVid[i].duongDanYoutube;
                 }
             }
         }

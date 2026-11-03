@@ -61,14 +61,10 @@ function xemTrailer(){
     document.getElementsByClassName("banner")[0].style="display:none";
 }
 function chonPhim(id){
-    for(var i = 0; i < danhSachPhim.length; i++){
+    for(let i = 0; i < danhSachPhim.length; i++){
         if(danhSachPhim[i].id==id){
-            var banner = danhSachPhim[i].banner;
-            var trailer = danhSachPhim[i].trailer;
-            document.getElementsByClassName("banner")[0].src=banner + ".png";
-            var videoTag = document.getElementsByClassName("video-banner")[0];
-            videoTag.src = trailer;
-            videoTag.load();
+            document.getElementsByClassName("banner")[0].src=danhSachPhim[i].banner + ".png";
+            document.getElementsByClassName("video-banner")[0].src = danhSachPhim[i].trailer;
             xemTrailer();
         }
     }
