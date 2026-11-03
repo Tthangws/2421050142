@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS netflix CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS netflix;
 USE netflix;
 
 -- 1. Bảng người dùng
