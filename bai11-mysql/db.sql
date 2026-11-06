@@ -54,6 +54,14 @@ CREATE TABLE phim_dien_vien (
     FOREIGN KEY (phim_id) REFERENCES phim(id) ON DELETE CASCADE,
     FOREIGN KEY (dien_vien_id) REFERENCES dien_vien(id) ON DELETE CASCADE
 );
+-- Bảng đạo diễn
+CREATE TABLE IF NOT EXISTS dao_dien (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ho_ten VARCHAR(100) NOT NULL,
+    ngay_sinh DATE,
+    quoc_gia VARCHAR(100),
+    mo_ta TEXT
+);
 -- btvn
 -- sửa và hoàn thiện tất cả bảng trên vscode và đẩy lên git
 -- làm cách nào để chạy 1 câu lệnh nhiều lần k lỗi ( vd như tạo bảng r thì chạy thêm lần nữa vẫn k lỗivà  - dùng if not EXISIT)
