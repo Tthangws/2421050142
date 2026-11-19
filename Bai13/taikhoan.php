@@ -32,6 +32,7 @@
         <tr>
             <th>id</td>
             <th>Tên đăng nhập</td>
+            <th>Mật khẩu</td>
             <th>email</td>
             <th>Họ tên</td>
             <th>Ngày sinh</td>
@@ -47,6 +48,7 @@
         <tr>
             <td><?php echo $row['id'] ?></td>
             <td><?php echo $row['ten_dang_nhap'] ?></td>
+            <td><?php echo $row['mat_khau'] ?></td>
             <td><?php echo $row['email'] ?></td>
             <td><?php echo $row['ho_ten'] ?></td>
             <td><?php echo $row['ngay_sinh'] ?></td>

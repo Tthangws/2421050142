@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: powderblue;
+        }
         .khoi {
             border: 1px solid black;
             border-radius: 10px;
@@ -17,11 +20,15 @@
         input {
             padding: 5px 0;
             margin: 10px 0;
-            border-radius:5px;
+            border-radius:9px;
         }
 
         button{
-            border-radius:5px;
+            font-size: 15px;
+            border-radius:10px;
+            padding 15px;
+            background-color: deepskyblue;
+            width: 70%;
         }
 
         form {

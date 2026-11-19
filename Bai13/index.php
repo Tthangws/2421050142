@@ -9,13 +9,30 @@
         ul{
             list-style: none;
             display: flex;
-            gap: 10px;
-            background-color: blue;
+            gap: 30px;
+            background-color: #1E3A8A;
             padding: 10px;
+            border-radius: 15px;
         }
         a{
             text-decoration: none;
             color: white;
+        }
+        input::placeholder {
+            font-size: 16px;
+            font-style: italic;
+        }
+        h1{
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        li{
+            padding: 5px;
+        }
+        li:hover{
+            background-color: #2aab25;
+            border-radius: 13px;;
         }
     </style>
 </head>
