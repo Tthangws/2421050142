@@ -74,7 +74,7 @@
                         header("Location: index.php");
 
                     }else{
-                        echo "Tên đăng nhập hoặc mk k chính xác !";
+                        echo "<br>Alert: Tên đăng nhập hoặc mk k chính xác !";
                     }
                 }
 

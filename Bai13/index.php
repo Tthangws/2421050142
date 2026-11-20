@@ -80,6 +80,10 @@
                 case 'themtaikhoan':
                     include 'themtaikhoan.php';
                     break;
+
+                case 'capnhattaikhoan':
+                    include 'capnhattaikhoan.php';
+                    break;
             }
         }
     

@@ -16,6 +16,19 @@
             padding:10px;
             border-radius: 10px;
         }
+        .cap-nhat{
+            background-color: aquamarine;
+            color: black;
+            padding:1px;
+            border-radius: 5px;
+            margin: 3px;
+        }
+        .xoa{
+            background-color: red;
+            color: black;
+            padding:1px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +51,7 @@
             <th>Ngày sinh</td>
             <th>Số điện thoại</td>
             <th>Giới tính</td>
+            <th>Chức năng</th>
         </tr>
         <?php
             while($row = mysqli_fetch_array($result))
@@ -53,7 +67,11 @@
             <td><?php echo $row['ho_ten'] ?></td>
             <td><?php echo $row['ngay_sinh'] ?></td>
             <td><?php echo $row['so_dien_thoai'] ?></td>
-            <td><?php echo $row['gioi_tinh'] ?></td>
+            <td><?php echo $row['gioi_tinh']==true?"Nam":"Nữ" ?></td>
+            <td>
+                <a href="index.php?page_layout=capnhattaikhoan&id=<?php echo $row['id']?>" class="cap-nhat">Cập nhật</a>
+                <a href="index.php?page_layout=xoataikhoan&id=<?php echo $row['id']?>" class="xoa">Xóa</a>
+            </td>
         </tr>
         <?php
             }
