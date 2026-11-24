@@ -32,7 +32,7 @@
         }
         li:hover{
             background-color: #2aab25;
-            border-radius: 13px;;
+            border-radius: 13px;
         }
     </style>
 </head>
@@ -49,8 +49,8 @@
     ?>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.php?page_layout=trangchu">Trang chủ</a></li>
+            <ul class="ul">
+                <li><a href="index.php?page_layout=trangchu" >Trang chủ </a></li>
                 <li><a href="index.php?page_layout=taikhoan">Tài khoản</a></li>
                 <li><a href="index.php?page_layout=danhmuc">Danh mục</a></li>
                 <li><a href="index.php?page_layout=phim">Phim</a></li>
@@ -87,6 +87,22 @@
 
                 case 'xoataikhoan':
                     include 'xoataikhoan.php';
+                    break;
+
+                 case 'themphim':
+                    include 'themphim.php';
+                    break;
+
+                 case 'capnhatphim':
+                    include 'capnhatphim.php';
+                    break;
+
+                 case 'xoaphim':
+                    include 'xoaphim.php';
+                    break;
+
+                 case 'thongtindaodien':
+                    include 'thongtindaodien.php';
                     break;
             }
         }
