@@ -102,8 +102,8 @@
 
         <div class="gioi-tinh">
             <h3>Giới tính</h3>
-            Nam<input type="radio" name="gioitinh" id="" value="1">
-            Nữ<input type="radio" name="gioitinh" id="" value="0">
+            Nam <input type="radio" name="gioitinh" value="1" <?php if ($user['gioi_tinh'] == 1) echo 'checked'; ?>>
+            Nữ <input type="radio" name="gioitinh" value="0" <?php if ($user['gioi_tinh'] == 0) echo 'checked'; ?>>
         </div>
 
         <div class="">
@@ -143,7 +143,8 @@
             //echo $sql;
             $result = mysqli_query($conn, $sql);
             if ($result) {
-                header("Location: index.php?page_layout=taikhoan");
+                echo "<script>window.location.href = 'index.php?page_layout=taikhoan';</script>";
+                exit();
             } else {
                 echo "Cập nhật người dùng thất bại!";
             }

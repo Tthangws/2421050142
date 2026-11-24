@@ -7,5 +7,10 @@
 </head>
 <body>
     <h1>Phim</h1>
+
+    <?php
+    echo "<script>window.location.href = '../bai7/netflix.html';</script>";
+    exit();
+    ?>
 </body>
 </html>

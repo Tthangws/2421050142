@@ -84,6 +84,10 @@
                 case 'capnhattaikhoan':
                     include 'capnhattaikhoan.php';
                     break;
+
+                case 'xoataikhoan':
+                    include 'xoataikhoan.php';
+                    break;
             }
         }
     
