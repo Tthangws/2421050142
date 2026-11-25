@@ -29,6 +29,8 @@
 
         li{
             padding: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
         }
         li:hover{
             background-color: #2aab25;
@@ -49,7 +51,7 @@
     ?>
     <header>
         <nav>
-            <ul class="ul">
+            <ul>
                 <li><a href="index.php?page_layout=trangchu" >Trang chủ </a></li>
                 <li><a href="index.php?page_layout=taikhoan">Tài khoản</a></li>
                 <li><a href="index.php?page_layout=danhmuc">Danh mục</a></li>

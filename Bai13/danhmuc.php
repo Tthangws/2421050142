@@ -31,6 +31,7 @@ $result_phim = mysqli_query($conn, $sql_phim);
             flex-wrap: wrap;
             gap: 10px;
             margin: 15px 0 25px 0;
+            
         }
         .btn-dm {
             padding: 8px 16px;
@@ -49,6 +50,7 @@ $result_phim = mysqli_query($conn, $sql_phim);
         table {
             width: 100%;
             border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         th, td {
             border: 1px solid black;
@@ -84,6 +86,8 @@ $result_phim = mysqli_query($conn, $sql_phim);
             <th>Năm</th>
             <th>Độ tuổi</th>
             <th>Mô tả</th>
+            <th>Trailer</th>
+            <th>Phim poster</th>
         </tr>
         <?php
         if (mysqli_num_rows($result_phim) > 0) {

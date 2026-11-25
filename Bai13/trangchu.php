@@ -7,6 +7,7 @@
     <style>
         table{
             width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         tr, th, td{
             border: 1px solid black;

@@ -13,12 +13,13 @@ $result = mysqli_query($conn, $sql);
         table{
             width: 100%;
             margin:18px 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         tr, th, td{
             border: 1px solid black;
         }
         .btn-add{
-            background-color: green;
+            background-color:  dodgerblue;
             padding:10px;
             border-radius: 10px;
 
@@ -61,6 +62,9 @@ $result = mysqli_query($conn, $sql);
             <th>Mô tả</th>
             <th>Chức năng</th>
         </tr>
+        
+
+
         <?php
         while ($row = mysqli_fetch_assoc($result)) {
         ?>
