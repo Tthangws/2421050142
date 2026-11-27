@@ -106,6 +106,10 @@
                  case 'thongtindaodien':
                     include 'thongtindaodien.php';
                     break;
+
+                case 'themtheloai':
+                    include 'themtheloai.php';
+                    break;
             }
         }
     

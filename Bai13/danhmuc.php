@@ -59,6 +59,16 @@ $result_phim = mysqli_query($conn, $sql_phim);
         th {
             background-color: #f2f2f2;
         }
+        .them-tl{
+            padding: 8px 16px;
+            background-color: antiquewhite;
+            color: black;
+            text-decoration: none;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+
+        }
     </style>
 </head>
 <body>
@@ -74,8 +84,10 @@ $result_phim = mysqli_query($conn, $sql_phim);
                class="btn-dm <?php if ($tl_id == $tl['id']) echo 'active'; ?>">
                 <?php echo $tl['ten_the_loai']; ?> (<?php echo $tl['so_luong']; ?>)
             </a>
+            
         <?php } ?>
     </div>
+    <h3><a href="index.php?page_layout=themtheloai" class=them-tl>Thêm thể loại</a></h3>
 
     <!-- Bảng hiển thị danh sách phim sau khi lọc -->
     <table>
@@ -86,8 +98,6 @@ $result_phim = mysqli_query($conn, $sql_phim);
             <th>Năm</th>
             <th>Độ tuổi</th>
             <th>Mô tả</th>
-            <th>Trailer</th>
-            <th>Phim poster</th>
         </tr>
         <?php
         if (mysqli_num_rows($result_phim) > 0) {

@@ -60,7 +60,10 @@ $result = mysqli_query($conn, $sql);
             <th>Năm</th>
             <th>Độ tuổi</th>
             <th>Mô tả</th>
+            <th>Trailer</th>
+            <th>Poster</th>
             <th>Chức năng</th>
+            
         </tr>
         
 
@@ -76,6 +79,10 @@ $result = mysqli_query($conn, $sql);
                 <td><?php echo $row['nam']; ?></td>
                 <td><?php echo $row['do_tuoi']; ?></td>
                 <td><?php echo $row['mo_ta']; ?></td>
+                <td><?php echo $row['trailer']; ?></td>
+                <td>
+                    <img src="upload/<?php echo $row['phim_poster']; ?>" width="80">
+                </td>
                 <td>
                     <a href="index.php?page_layout=capnhatphim&id=<?php echo $row['id']; ?>" class="capnhat">Cập nhật</a>
                     <a href="index.php?page_layout=xoaphim&id=<?php echo $row['id']; ?>" class="xoa">Xóa</a>
